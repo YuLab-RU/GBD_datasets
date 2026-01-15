@@ -1,9 +1,5 @@
 # Lemurs
 
-The data this week comes from [Duke Lemur
-Center](https://lemur.duke.edu/) and was cleaned by [Jesse
-Mostipak](https://github.com/rfordatascience/tidytuesday/issues/204).
-
 > ### About Lemurs and the Duke Lemur Center
 
 > The [Duke Lemur Center](https://lemur.duke.edu/) houses over 200
@@ -28,78 +24,8 @@ Mostipak](https://github.com/rfordatascience/tidytuesday/issues/204).
 
 > ### Taxonomic Code
 >
-> You can use the following table for the taxonomic code, or retrieve it
-> by registering for the [Duke Lemur Center Database
-> here](https://duke.qualtrics.com/jfe/form/SV_cZMTHoHiAljNGXX?Q_JFE=qdg).
+> A separate table is provided for the taxonomic code.
 
-| **Taxon** | **Latin name**               | **Common name**              |
-|:----------|:-----------------------------|:-----------------------------|
-| CMED      | Cheirogaleus medius           | Fat-tailed dwarf lemur       |
-| DMAD      | Daubentonia madagascariensis | Aye-aye                      |
-| EALB      | Eulemur albifrons            | White-fronted brown lemur    |
-| ECOL      | Eulemur collaris             | Collared brown lemur         |
-| ECOR      | Eulemur coronatus            | Crowned lemur                |
-| EFLA      | Eulemur flavifrons           | Blue-eyed black lemur        |
-| EFUL      | Eulemur fulvus               | Common brown lemur           |
-| EMAC      | Eulemur macaco               | Black lemur                  |
-| EMON      | Eulemur mongoz               | Mongoose lemur               |
-| ERUB      | Eulemur rubriventer          | Red-bellied lemur            |
-| ERUF      | Eulemur rufus                | Red-fronted brown lemur      |
-| ESAN      | Eulemur sanfordi             | Sanford's brown lemur        |
-| EUL       | Eulemur Eulemur              | hybrid                       |
-| GMOH      | Galago moholi                | Mohol bushbaby               |
-| HGG       | Hapalemur griseus griseus    | Eastern lesser bamboo lemur  |
-| LCAT      | Lemur catta                  | Ring-tailed lemur            |
-| LTAR      | Loris tardigradus            | Slender loris                |
-| MMUR      | Mircocebus murinus           | Gray mouse lemur             |
-| MZAZ      | Mirza coquereli              | Northern giant mouse lemur   |
-| NCOU      | Nycticebus coucang           | Slow loris                   |
-| NPYG      | Nycticebus pygmaeus          | Pygmy slow loris             |
-| OGG       | Otolemur garnettii garnettii | Northern greater galago      |
-| PCOQ      | Propithecus coquereli        | Coquerel's sifaka            |
-| PPOT      | Perodicticus potto           | Potto                        |
-| VAR       | Varecia Varecia              | hybrid                       |
-| VRUB      | Varecia rubra                | Red ruffed lemur             |
-| VVV       | Varecia variegata variegata  | Black-and-white ruffed lemur |
-
-> ### Open Source article
->
-> For more in-depth information on this dataset, please see: [Life
-> history profiles for 27 strepsirrhine primate taxa generated using
-> captive data from the Duke Lemur
-> Center](http://www.nature.com/articles/sdata201419)
->
-> ### Authors & Citation
->
-> Zehr, SM, Roach RG, Haring D, Taylor J, Cameron FH, Yoder AD. Life
-> history profiles for 27 strepsirrhine primate taxa generated using
-> captive data from the Duke Lemur Center. Sci. Data 1:140019 doi:
-> 10.1038/sdata.2014.19 (2014).
-
-> Header image Photo by [Anggit
-> Rizkianto](https://unsplash.com/@anggit_mr?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
-> on Unsplash
-
-### Get the data here
-
-```r
-# Get the Data
-
-# Read in with tidytuesdayR package 
-# Install from CRAN via: install.packages("tidytuesdayR")
-# This loads the readme and all the datasets for the week of interest
-
-# Either ISO-8601 date or year/week works!
-
-tuesdata <- tidytuesdayR::tt_load('2021-08-24')
-tuesdata <- tidytuesdayR::tt_load(2021, week = 35)
-
-lemurs <- tuesdata$lemurs
-
-# Or read in the data manually
-
-lemurs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tidytuesday/main/data/2021/2021-08-24/lemur_data.csv')
-```
 
 ### Data Dictionary
 
@@ -162,4 +88,14 @@ lemurs <- readr::read_csv('https://raw.githubusercontent.com/rfordatascience/tid
 | pct_preg_remain_if_preg       | double    | % of pregnancy remaining: Percentage of pregnancy remaining when weight was taken from a pregnant female calculated as (days_BF_inf_birth/Expected_Gestation)                                                                                                                                                                                                                                                   |
 | infant_lit_sz_if_preg         | double    | Infant litter size: Number of infants in the litter a female produced if she was pregnant on date weight was taken                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                  |
 
-### Cleaning Script
+### Acknowledgement
+This data comes from [Duke Lemur
+Center](https://lemur.duke.edu/) and was cleaned by [Jesse
+Mostipak](https://github.com/rfordatascience/tidytuesday/issues/204).
+
+For more in-depth information on this dataset, please see: 
+
+Zehr, SM, Roach RG, Haring D, Taylor J, Cameron FH, Yoder AD. Life
+history profiles for 27 strepsirrhine primate taxa generated using
+captive data from the Duke Lemur Center. Sci. Data 1:140019 doi:
+10.1038/sdata.2014.19 (2014).
