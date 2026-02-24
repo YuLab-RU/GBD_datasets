@@ -7,7 +7,7 @@ Different mammals are examined according to their sleeping time. Two qualitative
 ## Data Description
 species - Species of mammals\
 body_wt - Total body weight of the mammal (in kg)\
-brain_wt - Brain weight of the mammal (in kg)\
+brain_wt - Brain weight of the mammal ~~(in kg)~~ (in g)\
 non_dreaming - Number of hours of non dreaming sleep\
 dreaming - Number of hours of dreaming sleep\
 total_sleep - Total number of hours of sleep\
