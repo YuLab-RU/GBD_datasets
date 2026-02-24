@@ -20,5 +20,5 @@ danger - An index of how much danger the mammal faces from other animals. This i
 
 ## Acknowledgements
 T. Allison and D. Cicchetti, "Sleep in mammals: ecological and constitutional correlates," Arch. Hydrobiol, vol. 75, p. 442, 1975.
-V.M. Savage, & G.B. West, A quantitative, theoretical framework for understanding mammalian sleep, Proc. Natl. Acad. Sci. U.S.A. 104 (3) 1051-1056, 2007. 
+V.M. Savage, & G.B. West, "A quantitative, theoretical framework for understanding mammalian sleep," Proc. Natl. Acad. Sci. U.S.A. 104 (3) 1051-1056, 2007. 
 
